@@ -1,0 +1,5 @@
+runtime: python39
+service: testing
+handlers:
+- url: /.*
+  script: main.app

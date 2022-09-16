@@ -1,4 +1,3 @@
 dispatch:
   - url: "*/submissions"
-    service: storage
-# alternative ? : https://cloud.google.com/load-balancing/docs/negs/serverless-neg-concepts
+    service: testing
