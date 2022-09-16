@@ -34,10 +34,11 @@ def submissions():
                     storage_client = storage.Client()
                     bucket_name =  'dashboard11111'  
                     bucket = storage_client.bucket(bucket_name)
-                    blob = bucket.blob(str(uuid.uuid1()))
+                    blobname = str(uuid.uuid1())
+                    blob = bucket.blob(blobname)
                     output = res
                     blob.upload_from_string(data=output, content_type="text/plain")
-                return 'good'
+                return blobname
             else:
                 return 'where zip'
 
