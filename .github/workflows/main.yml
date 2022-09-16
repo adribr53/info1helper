@@ -34,8 +34,8 @@ jobs:
       with:
         deliverables: appengine/dispatch.yaml appengine/defaut/app.yaml appengine/default/app.yaml
         version: v1
-        project_id: ${{ secrets.GCP_PROJECT }}
-        credentials: ${{ secrets.GCP_CREDENTIALS }}
+        project_id: ${{ secrets.PROJECT_ID }}
+        credentials: ${{ secrets.CREDENTIALS_JSON }}
 
     - name: Test
       run: curl "${{ steps.deploy.outputs.url }}"
