@@ -24,7 +24,7 @@ jobs:
       uses: 'google-github-actions/auth@v0'
       with:
         workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-        service_account: 'quantum-ether-362110@appspot.gserviceaccount.com'
+        service_account: 'app-412@quantum-ether-362110.iam.gserviceaccount.com'
         
 #    - name: Checkout
 #      uses: actions/checkout@v2
