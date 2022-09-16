@@ -8,6 +8,10 @@ on:
 
 jobs:
   deploy:
+    permissions:
+     contents: 'read'
+     id-token: 'write'
+     
     name: Deploying to Google Cloud
     runs-on: ubuntu-latest
     
